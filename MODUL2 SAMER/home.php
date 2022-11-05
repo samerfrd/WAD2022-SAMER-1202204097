@@ -55,7 +55,7 @@
                         <br>
                         <br>
                         <center>
-                          <a href="booking.php" class="btn btn-sm btn-primary">Book Now</a>
+                          <a href="booking.php?mobil=0" class="btn btn-sm btn-primary">Book Now</a>
                           
                         </center>
                         
@@ -77,7 +77,7 @@
                         <br>
                         <br>
                         <center>
-                            <a href="booking.php" class="btn btn-sm btn-primary">Book Now</a>
+                            <a href="booking.php?mobil=1" class="btn btn-sm btn-primary">Book Now</a>
                         </center>
                       </div>
                     </div>
@@ -97,7 +97,7 @@
                         <br>
                         <br>
                         <center>
-                            <a href="booking.php" class="btn btn-sm btn-primary">Book Now</a>
+                            <a href="booking.php?mobil=2" class="btn btn-sm btn-primary">Book Now</a>
                         </center>
                 </div> 
               </div>

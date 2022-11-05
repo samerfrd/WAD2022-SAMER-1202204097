@@ -1,3 +1,22 @@
+<?php
+$mobil = [
+    [
+        "namamobil" => "Honda Accord",
+        "harga" => 650000,
+        "img" => "https://tse3.mm.bing.net/th?id=OIP.UtLv7BI5leoUyS9a68tJCAHaFR&pid=Api&P=0"
+    ],
+    [
+        "namamobil" => "Honda Civic",
+        "harga" => 700000,
+        "img" => "https://tse3.mm.bing.net/th?id=OIP.b0DQapeZUrubRv_Lhf9OpQHaEc&pid=Api&P=0"
+    ],
+    [
+        "namamobil" => "BMW i8",
+        "harga" => 2000000,
+        "img" => "https://tse1.mm.bing.net/th?id=OIP.6a_tWLj33Zl4bm-CGv5ZvwHaEK&pid=Api&P=0"
+    ],
+];
+?>
 <!DOCTYPE html>
 <html>
 
@@ -18,7 +37,7 @@
         <div class="navbar-center" id="navbarNav">
              <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="home..php">Home </a>
+                      <a class="nav-link" href="home.php">Home </a>
                 </li>
                   <li class="nav-item active">
                        <a class="nav-link" href="booking.php">Booking <span class="sr-only">(current)</span></a>
@@ -37,15 +56,19 @@
             <div class="container" style="border: 1px solid rgb(228,228,228); max-width : 78%; border-radius : 5px">
                 <div class="row">
                     <div class="col">
-                        <img src="img/1.jpeg"
-                            style="height: 300px; margin-left: auto; margin-right:auto; display:block; margin-top: 200px;"
-                            alt="">
+                    <?php
+                        if(isset($_GET["mobil"])){
+                            ?><img src="<?php {echo $mobil[$_GET["mobil"]]["img"];} ?>" style="height: 300px; margin-left: auto; margin-right:auto; display:block; margin-top: 200px;" alt="">
+                    <?php
+                        }else{
+                            ?><img src="https://tse1.mm.bing.net/th?id=OIP.6a_tWLj33Zl4bm-CGv5ZvwHaEK&pid=Api&P=0" style="height: 300px; margin-left: auto; margin-right:auto; display:block; margin-top: 200px;" alt="">
+                        <?php }?>
                     </div>
                     <div class="col">
                     <!-- <form action="prosesbookingindividual.php" method="post"> -->
                         <div class="mb-3" style="margin-left: auto;">
                             <label for="name" class="form-label">Name</label>
-                            <input class="form-control" name="name" type="text" value="Name">
+                            <input class="form-control" name="name" type="text" value="SAMER_1202204097" readonly>
                                 
                         </div>
                         <div class="mb-3" style="margin-left: auto;">
@@ -99,13 +122,7 @@
                         </form>
                     </div>
         </section>
-        <div>
-        <div class="container" >
-                <div class="row mb-4">
-                  <div class="col-md-5">
-                    <div class="card">
-                      <img src="https://tse3.mm.bing.net/th?id=OIP.UtLv7BI5leoUyS9a68tJCAHaFR&pid=Api&P=0" class="card-img-top" alt="...">
-</div>
+        
 </body>
 
 <!-- Footer -->
