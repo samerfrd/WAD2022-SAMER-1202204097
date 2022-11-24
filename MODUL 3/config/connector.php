@@ -1,3 +1,3 @@
 <?php 
-  $conn = mysqli_connect("localhost", "root", "", "modul 3");
+  $connector = mysqli_connect("localhost", "root", "", "modul 3");
 ?>
